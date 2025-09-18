@@ -60,13 +60,10 @@ const Hero = () => {
         });
 
         videoRef.current.onloadedmetadata = () => {
-            // Pro iOS musíme spustit video, aby šla změna currentTime
-            videoRef.current.play();
-
             tl.to(videoRef.current, {
                 currentTime: videoRef.current.duration
-            });
-        };
+            })
+        }
     }, []);
     return (
        <>
