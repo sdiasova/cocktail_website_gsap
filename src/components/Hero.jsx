@@ -105,7 +105,6 @@ const Hero = () => {
                     src="/videos/output.mp4"
                     muted
                     playsInline
-                    autoPlay
                     preload="auto"
                 />
            </div>
